@@ -2,7 +2,7 @@ import React from 'react';
 
 const Topbar = () => {
     return (
-        <div className='text-sm p-2 bg-gradient-to-r from-green-700 via-green-800 to-green-900 bg-green-900/85" '>
+        <div className='text-sm p-2 bg-gradient-to-r from-green-700 via-green-800 to-green-900 bg-green-900/85 '>
       <div className='container mx-auto md:flex justify-between items-center '>
       <div className='flex items-center justify-between md:justify-normal font-kalpurush gap-2'>
             <h4 className='text-white pr-4'>বাংলাদেশ জাতীয় তথ্য বাতায়ন</h4>

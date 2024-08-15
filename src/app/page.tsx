@@ -1,8 +1,11 @@
+import InformationSection from "@/components/home/InformationSection";
 import NewsBar from "@/components/home/NewsBar";
+import Rightbar from "@/components/home/Rightbar";
 import Header from "@/components/shared/Header";
 import Menubar from "@/components/shared/Menubar";
 
 import Image from "next/image";
+
 
 export default function Home() {
   return (
@@ -10,6 +13,12 @@ export default function Home() {
       <NewsBar/>
     <Header/>
    <Menubar/>
+   {/* main container  */}
+
+   <section className="container flex justify-between gap-8 mx-auto ">
+   <InformationSection/>
+<Rightbar/>
+   </section>
     <h3 className="text-3xl">
     Home Page
 
