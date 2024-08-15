@@ -1,6 +1,9 @@
 import InformationSection from "@/components/home/InformationSection";
+import Loaction from "@/components/home/Loaction";
 import NewsBar from "@/components/home/NewsBar";
+import OthersInfo from "@/components/home/OthersInfo";
 import Rightbar from "@/components/home/Rightbar";
+import VideoGallery from "@/components/home/VideoGallery";
 import Header from "@/components/shared/Header";
 import Menubar from "@/components/shared/Menubar";
 
@@ -16,16 +19,14 @@ export default function Home() {
    {/* main container  */}
 
    <section className="container flex justify-between gap-8 mx-auto ">
+   <div className="space-y-16">
    <InformationSection/>
+   <OthersInfo/>
+   <VideoGallery/>
+   <Loaction/>
+   </div>
 <Rightbar/>
    </section>
-    <h3 className="text-3xl">
-    Home Page
-
-
-    </h3>
-
-    <Image src="https://designstripe-secure.imgix.net/scene-snapshots/8ad34d0d-88c1-4f21-9646-42864867054d/1659566853799/default?auto=format&fit=clip&h=850&mark=%2Fwatermark.png&markfit=max&markalign=middle%2Ccenter&markw=1&markh=1&s=612575cd40f0936feacf44b74833cdb8" width={600} height={400} alt="asdas" />
 
     </main>
   );

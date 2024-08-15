@@ -4,7 +4,7 @@ import NoticeBoard from '../home/NoticeBoard';
 
 const Header = () => {
     return (
-        <div className='md:my-10 md:min-h-96 container md:flex gap-8 justify-between  mx-auto'>
+        <div className='md:my-8 md:min-h-96 container md:flex gap-8 justify-between  mx-auto'>
             <div className=' w-full  shadow-lg  p-2 rounded-md   bg-cover bg-center object-center '  style={{
             backgroundImage: "url(https://i.postimg.cc/bvsPTXQ8/ict-dept.png)",
           }}>

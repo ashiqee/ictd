@@ -24,7 +24,7 @@ const CardHome = ({title,icon,listData}) => {
                     {
                 listData?.map((item,i)=>(
                     <li key={i} className='flex justify-between py-1.5 rounded-md hover:text-green-700 cursor-pointer  items-center'>
-                    <p className='flex gap-4'><CaretRightOutlined className="text-green-700" /> <span className='max-w-56 md:max-w-80 '>{item.label}</span></p> 
+                    <p className='flex gap-4'><CaretRightOutlined className="text-green-700" /> <span className='max-w-56 md:max-w-80 hover:underline '>{item.label}</span></p> 
                     </li>   
                 )
                     
