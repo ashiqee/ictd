@@ -42,24 +42,7 @@ const VideoGallery = () => {
             videoUrl: 'https://www.example.com/videos/ts-advanced',
             description: ''
         },
-        {
-            title: 'ডিজিটাল ওয়ার্ল্ড ২০১৭',
-            thumbnailUrl: 'https://images.unsplash.com/photo-1696517170961-661e9dca962e?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-            videoUrl: 'https://www.example.com/videos/ts-advanced',
-            description: ''
-        },
-        {
-            title: 'ডিজিটাল বাংলাদেশ দিবস - ২০১৯',
-            thumbnailUrl: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-            videoUrl: 'https://www.example.com/videos/ts-advanced',
-            description: ''
-        },
-        {
-            title: 'আজকের বাংলাদেশ ডিজিটাল বাংলাদেশ',
-            thumbnailUrl: 'https://plus.unsplash.com/premium_photo-1661763559420-68a27c8a8b27?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-            videoUrl: 'https://www.example.com/videos/ts-advanced',
-            description: ''
-        },
+       
         // Add more videos as needed
     ];
 
@@ -79,7 +62,7 @@ const VideoGallery = () => {
                     thumbnailUrl={video.thumbnailUrl}
                     videoUrl={video.videoUrl}
                     description={video.description}
-                    onClick={() => handleVideoClick(video.videoUrl)}
+                    // onClick={() => handleVideoClick(video.videoUrl)}
                 />
             ))}
         </div>

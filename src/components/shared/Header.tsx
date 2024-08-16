@@ -12,10 +12,10 @@ const Header = () => {
 
           <div className='flex md:px-10   container py-14 lg:py-0 mx-auto font-kalpurush gap-2 md:gap-4'>
           <Image
-         
-             src="https://seeklogo.com/images/B/bangladesh-govt-republic-of-bangladesh-logo-D8A916D881-seeklogo.com.png"
-             width={100}
-             height={100}
+          className="w-28 object-cover h-fit"
+             src="https://i.postimg.cc/XJyNdBbW/logo.png"
+             width={200}
+             height={200}
              alt='bd-gov' />
 
              <div className='p-2 text-white'>

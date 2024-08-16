@@ -16,14 +16,8 @@ const Rightbar = () => {
         {
             degination:"সচিব",
             name:"জনাব মোঃ সামসুল আরেফিন",
-            profileImg:"https://i.postimg.cc/vBwqj2Pg/image.png"
-        },
-        {
-            degination:"মহাপরিচালক",
-            name:"জনাব মোঃ মোস্তফা কামাল",
-            profileImg:"https://i.postimg.cc/BvK7mfCf/image.jpg"
-        },
-    
+            profileImg:"https://i.postimg.cc/MTLPkhkq/Honorable-Secretary-Sir.jpg"
+        },    
     ]
 
     const importantLink =[
@@ -107,7 +101,8 @@ const Rightbar = () => {
                 width={180}
                 height={180}
                 alt='#'/>
-                <p>{officer.name}</p>
+                <p className='text-center text-green-600 text-xl'>{officer.name}</p>
+                <p className='text-center  text-xl'>{officer.degination}</p>
                 <p className='underline flex justify-end text-green-600'>বিস্তারিত</p>
             </div>
             ))
@@ -189,8 +184,15 @@ const Rightbar = () => {
           
          </section>
 
-{/* myGOV  */}
-<section  className='space-y-8 w-full '>
+{/* esheba */}
+<section  className='space-y-2 w-full '>
+    <Image
+    className='w-full rounded-md hover:shadow-lg'
+    src={"https://i.postimg.cc/9f1KkRg5/eTe.jpg"}
+    alt='#'
+    width={200}
+    height={100}
+    />
     <Image
     className='w-full rounded-md hover:shadow-lg'
     src={"https://i.postimg.cc/V6VTfycK/myGov.gif"}
@@ -198,10 +200,6 @@ const Rightbar = () => {
     width={100}
     height={100}
     />
-</section>
-
-{/* eService  */}
-<section  className='space-y-8 w-full '>
     <Image
     className='w-full rounded-md hover:shadow-lg'
     src={"https://i.postimg.cc/W33CcNxD/internal-eservice2.jpg"}
@@ -210,6 +208,9 @@ const Rightbar = () => {
     height={100}
     />
 </section>
+
+
+
 {/* Sebha  */}
 <section  className='space-y-8 w-full '>
 <Link href={"https://doict.gov.bd/site/view/sps_data"}> <TittleCard title='সেবা সহজিকরণ'/></Link>
@@ -241,17 +242,18 @@ const Rightbar = () => {
          </div>
           
          </section>
-{/* esheba */}
-         <section  className='space-y-8 w-full '>
+
+{/* Dengu website */}
+<section  className='space-y-0 w-full '>
+    <TittleCard title='ডেঙ্গু প্রতিরোধে করণীয়'/>
     <Image
     className='w-full rounded-md hover:shadow-lg'
-    src={"https://i.postimg.cc/9f1KkRg5/eTe.jpg"}
+    src={"/images/dengu.jpg"}
     alt='#'
     width={200}
     height={100}
     />
 </section>
-
 <section>
     <TittleCard title='জাতীয় সংগীত'/>
     <AudioPlayer/>
@@ -259,8 +261,16 @@ const Rightbar = () => {
 
 
 
+
 {/* staff website */}
-<section  className='space-y-8 w-full '>
+<section  className='space-y-2 w-full '>
+<Image
+    className='w-full rounded-md hover:shadow-lg'
+    src={"/images/discount_bn.jpg"}
+    alt='#'
+    width={200}
+    height={100}
+    />
     <Image
     className='w-full rounded-md hover:shadow-lg'
     src={"https://i.postimg.cc/wMRr3Wqg/bkkb-button-bn.png"}
@@ -278,25 +288,9 @@ const Rightbar = () => {
    </div>
 </section>
 
-<section>
-    <TittleCard title='সরকারি অফিসের নতুন ওয়েবসাইটের আবেদন'/>
-  
-</section>
 
 
-         {/* Help Line */}
-         <section className='space-y-8'>
-         <div>
-         <TittleCard title={"জরুরি হেল্পলাইন নম্বর"}/>
-                <Image 
-                className='rounded-b-3xl  hover:shadow-2xl object-cover w-full'
-                src={"https://i.postimg.cc/d03r85MX/help-line.png"}
-                width={180}
-                height={180}
-                alt='#'/>
-         </div>
-          
-         </section>
+     
         </div>
     );
 };

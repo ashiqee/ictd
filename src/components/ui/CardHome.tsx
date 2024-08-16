@@ -17,14 +17,14 @@ interface CardHomeProps{
 const CardHome: React.FC<CardHomeProps> = ({title,icon,listData}) => {
   
     return (
-        <div  className='shadow-lg w-full  font-kalpurush hover:bg-green-200/5 bg-green-500/5 rounded-lg p-10'>
+        <div  className='shadow-lg w-full hover:scale-105 hover:duration-1000 hover:translate-y-0 font-kalpurush hover:bg-green-200/5 bg-green-500/5 rounded-lg p-5 md:p-10'>
            <SubTitle text={title}/>
            
             <div className='flex items-center gap-6 '>
                 {/* icon  */}
                 <div className='lg:min-w-32'>
                 <Image
-                className="w-16 md:w-full "
+                className="w-24 "
                     src={icon}
                     width={100}
                     height={100}

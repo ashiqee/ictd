@@ -3,11 +3,19 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className='h-40 flex flex-col p-2 bg-cover md:bg-contain bg-no-repeat   justify-center mt-10 bg-green-800/10'
-        style={{backgroundImage: "url(https://i.postimg.cc/L6tJ120g/footer-top-bg.png)"}}
+      <div className='mt-8'>
+         <Image 
+                alt='a'
+                className='md:w-[1920px] md:h-[100px] w-[500px] h-[50px]'
+                src={"https://i.postimg.cc/L6tJ120g/footer-top-bg.png"}
+                width={1920}
+                height={100}
+                />
+ <div className='h-40 flex flex-col p-2 bg-cover md:bg-contain bg-no-repeat   justify-center  bg-green-800/10'
+        // style={{backgroundImage: "url(https://i.postimg.cc/L6tJ120g/footer-top-bg.png)"}}
     
         >
-            <div className='font-kalpurush p-2 md:flex container mx-auto items-center justify-around '>
+            <div className='font-kalpurush p-2 md:flex container mx-auto items-center justify-between '>
           <div className='text-md font-bold'>
           <p>
             তথ্য ও যোগাযোগ প্রযুক্তি অধিদপ্তরের ওয়েবসাইট ভিজিট করার জন্য ধন্যবাদ
@@ -32,6 +40,11 @@ const Footer = () => {
             </div>
         </div>
         </div>
+        <div className='text-center font-kalpurush'>
+            <small>২০২৪ &copy; তথ্য ও যোগাযোগ প্রযুক্তি অধিদপ্তর</small>
+        </div>
+      </div>
+       
     );
 };
 

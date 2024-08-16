@@ -1,3 +1,4 @@
+import HelpLineNumber from "@/components/home/HelpLineNumber";
 import InformationSection from "@/components/home/InformationSection";
 import Loaction from "@/components/home/Loaction";
 import NewsBar from "@/components/home/NewsBar";
@@ -6,6 +7,7 @@ import Rightbar from "@/components/home/Rightbar";
 import VideoGallery from "@/components/home/VideoGallery";
 import Header from "@/components/shared/Header";
 import Menubar from "@/components/shared/Menubar";
+import TittleCard from "@/components/ui/TittleCard";
 
 import Image from "next/image";
 
@@ -24,6 +26,7 @@ export default function Home() {
    <OthersInfo/>
    <VideoGallery/>
    <Loaction/>
+      <HelpLineNumber/>
    </div>
 <Rightbar/>
    </section>

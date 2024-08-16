@@ -166,6 +166,47 @@ export const InformationData = [
         ]
     },
     {
+        infoTitle:"এসডিজি ও উন্নয়ন কর্মপরিকল্পনা",
+        infoIcon:"https://i.postimg.cc/VvQfRsfC/Final-Logo-SDG.png",
+        listData:[
+            
+            {
+                label:"মন্ত্রণালয়/বিভাগের এসডিজি"
+            },
+            {
+                label:"এসডিজি ফোকাল পয়েন্ট/বিকল্প ফোকাল পয়েন্ট"
+            },
+            {
+                label:"এসডিজি জাতীয় ডকুমেন্ট"
+            },
+            {
+                label:"পঞ্চবার্ষিকী পরিকল্পনা ও প্রতিবেদন"
+            },
+        ]
+    },
+    {
+
+
+        infoTitle:"জাতীয় আইসিটি নীতিমালা ২০১৮",
+        infoIcon:"https://i.postimg.cc/s2LDM9bK/Capture-1.jpg",
+        listData:[
+            
+            {
+                label:"জাতীয় আইসিটি নীতিমালা ২০১৮"
+            },
+            {
+                label:"মন্ত্রণালয়/বিভাগভিত্তিক কর্মপরিকল্পনা"
+            },
+            {
+                label:"অফিস আদেশ, প্রজ্ঞাপন"
+            },
+            {
+                label:"ফোকাল পয়েন্ট"
+            },
+           
+        ]
+    },
+    {
         infoTitle:"বাজেট",
         infoIcon:"https://i.postimg.cc/sX5F66xj/bagdet.png",
         listData:[
