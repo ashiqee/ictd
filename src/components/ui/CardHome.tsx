@@ -22,8 +22,9 @@ const CardHome: React.FC<CardHomeProps> = ({title,icon,listData}) => {
            
             <div className='flex items-center gap-6 '>
                 {/* icon  */}
-                <div className='min-w-32'>
+                <div className='lg:min-w-32'>
                 <Image
+                className="w-16 md:w-full "
                     src={icon}
                     width={100}
                     height={100}
