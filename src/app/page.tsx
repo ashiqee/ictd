@@ -18,7 +18,7 @@ export default function Home() {
    <Menubar/>
    {/* main container  */}
 
-   <section className="container flex justify-between gap-8 mx-auto ">
+   <section className="container lg:flex justify-between gap-8 mx-auto ">
    <div className="space-y-16">
    <InformationSection/>
    <OthersInfo/>

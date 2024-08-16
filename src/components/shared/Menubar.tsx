@@ -91,7 +91,7 @@ const Menubar = () => {
         },
     ]
     return (
-        <div className=' mb-8 container hidden md:block font-kalpurush mx-auto'>
+        <div className=' mb-8 container hidden lg:block font-kalpurush mx-auto'>
             <ul className='flex items-center justify-between'>
                 {
                     menuItems.map((item,i)=>(

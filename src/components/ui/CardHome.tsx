@@ -2,8 +2,19 @@ import { CaretRightOutlined } from '@ant-design/icons';
 import React from 'react';
 import SubTitle from './SubTitle';
 import Image from 'next/image';
+ 
 
-const CardHome = ({title,icon,listData}) => {
+interface listItem{
+    label:string
+}
+
+interface CardHomeProps{
+    title:string;
+    icon:string;
+    listData:listItem[]
+}
+
+const CardHome: React.FC<CardHomeProps> = ({title,icon,listData}) => {
   
     return (
         <div  className='shadow-lg w-full  font-kalpurush hover:bg-green-200/5 bg-green-500/5 rounded-lg p-10'>

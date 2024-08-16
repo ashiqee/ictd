@@ -2,8 +2,9 @@ import Image from 'next/image';
 import React from 'react';
 import TittleCard from '../ui/TittleCard';
 import Link from 'next/link';
-import { CheckCircleOutlined } from '@ant-design/icons';
+import { CheckCircleOutlined, FacebookFilled, TwitterCircleFilled, YoutubeFilled } from '@ant-design/icons';
 import Button from '../ui/Button';
+import AudioPlayer from './AudioPlayer';
 
 const Rightbar = () => {
     const officerData = [
@@ -92,7 +93,7 @@ const Rightbar = () => {
     ]
 
     return (
-        <div className='shadow-xl space-y-16 font-kalpurush bg-green-500/5 rounded-xl w-1/4 p-8 h-fit '>
+        <div className='shadow-xl space-y-12 font-kalpurush bg-green-500/5 rounded-xl md:w-2/4 mx-auto lg:w-1/4 p-8 h-fit '>
          
          {/* profile officers  */}
          <section className='space-y-8'>
@@ -187,6 +188,35 @@ const Rightbar = () => {
          </div>
           
          </section>
+
+{/* myGOV  */}
+<section  className='space-y-8 w-full '>
+    <Image
+    className='w-full rounded-md hover:shadow-lg'
+    src={"https://i.postimg.cc/V6VTfycK/myGov.gif"}
+    alt='#'
+    width={100}
+    height={100}
+    />
+</section>
+
+{/* eService  */}
+<section  className='space-y-8 w-full '>
+    <Image
+    className='w-full rounded-md hover:shadow-lg'
+    src={"https://i.postimg.cc/W33CcNxD/internal-eservice2.jpg"}
+    alt='#'
+    width={200}
+    height={100}
+    />
+</section>
+{/* Sebha  */}
+<section  className='space-y-8 w-full '>
+<Link href={"https://doict.gov.bd/site/view/sps_data"}> <TittleCard title='সেবা সহজিকরণ'/></Link>
+</section>
+
+
+
          {/* ইনোভেশন কর্নার */}
          <section className='space-y-8 w-full '>
          <div>
@@ -211,6 +241,47 @@ const Rightbar = () => {
          </div>
           
          </section>
+{/* esheba */}
+         <section  className='space-y-8 w-full '>
+    <Image
+    className='w-full rounded-md hover:shadow-lg'
+    src={"https://i.postimg.cc/9f1KkRg5/eTe.jpg"}
+    alt='#'
+    width={200}
+    height={100}
+    />
+</section>
+
+<section>
+    <TittleCard title='জাতীয় সংগীত'/>
+    <AudioPlayer/>
+</section>
+
+
+
+{/* staff website */}
+<section  className='space-y-8 w-full '>
+    <Image
+    className='w-full rounded-md hover:shadow-lg'
+    src={"https://i.postimg.cc/wMRr3Wqg/bkkb-button-bn.png"}
+    alt='#'
+    width={200}
+    height={100}
+    />
+</section>
+
+{/* social website */}
+<section  className='space-y-8 w-full '>
+    <TittleCard title='সামাজিক যোগাযোগ'/>
+   <div className='text-5xl flex justify-center gap-8'>
+    <FacebookFilled className='text-blue-700'/> <TwitterCircleFilled className='text-blue-400'/> <YoutubeFilled className='text-red-700'/>
+   </div>
+</section>
+
+<section>
+    <TittleCard title='সরকারি অফিসের নতুন ওয়েবসাইটের আবেদন'/>
+  
+</section>
 
 
          {/* Help Line */}

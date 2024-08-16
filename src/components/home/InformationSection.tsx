@@ -6,7 +6,7 @@ const InformationSection = () => {
 
 
     return (
-        <div className='grid grid-cols-2 justify-between w-full h-fit    gap-8'>
+        <div className='grid grid-cols-1 md:grid-cols-2 justify-between w-full h-fit    gap-8'>
             
 
 {

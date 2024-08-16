@@ -4,13 +4,13 @@ import NoticeBoard from '../home/NoticeBoard';
 
 const Header = () => {
     return (
-        <div className='md:my-8 md:min-h-96 container md:flex gap-8 justify-between  mx-auto'>
-            <div className=' w-full  shadow-lg  p-2 rounded-md   bg-cover bg-center object-center '  style={{
-            backgroundImage: "url(https://i.postimg.cc/bvsPTXQ8/ict-dept.png)",
+        <div className='md:my-8 md:min-h-96 container lg:flex gap-8 justify-between  mx-auto'>
+            <div className=' w-full  shadow-lg  p-2 rounded-md   bg-cover bg-center object-center ' 
+             style={{backgroundImage: "url(https://i.postimg.cc/bvsPTXQ8/ict-dept.png)",
           }}>
-            <div className='bg-black/20   md:h-full flex flex-col justify-center items-baseline w-full'>
+            <div className='bg-black/20   lg:h-full flex flex-col justify-center items-baseline w-full'>
 
-          <div className='flex md:px-10   container py-14 md:py-0 mx-auto font-kalpurush gap-2 md:gap-4'>
+          <div className='flex md:px-10   container py-14 lg:py-0 mx-auto font-kalpurush gap-2 md:gap-4'>
           <Image
          
              src="https://seeklogo.com/images/B/bangladesh-govt-republic-of-bangladesh-logo-D8A916D881-seeklogo.com.png"
@@ -28,7 +28,7 @@ const Header = () => {
           </div>
         </div>
 {/* notice  */}
-        <div className= 'mt-4 md:mt-0 md:w-2/4'>
+        <div className= 'mt-4 md:mt-0 lg:w-2/4'>
 
         <NoticeBoard/>
         </div>
