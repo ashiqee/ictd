@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import ScrollTop from '../ui/ScrollTop';
 
 const Footer = () => {
     return (
@@ -43,6 +44,7 @@ const Footer = () => {
         <div className='text-center font-kalpurush'>
             <small>২০২৪ &copy; তথ্য ও যোগাযোগ প্রযুক্তি অধিদপ্তর</small>
         </div>
+        <ScrollTop/>
       </div>
        
     );

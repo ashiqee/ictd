@@ -1,3 +1,4 @@
+import { MenuOutlined } from '@ant-design/icons';
 import React from 'react';
 
 const Menubar = () => {
@@ -99,6 +100,7 @@ const Menubar = () => {
         },
     ]
     return (
+        <>
         <div className="mb-8 mt-2 container hidden lg:block font-kalpurush mx-auto">
         <ul className="flex items-center justify-between">
           {menuItems.map((item, i) => (
@@ -133,7 +135,11 @@ const Menubar = () => {
             </li>
           ))}
         </ul>
+       
       </div>
+
+       
+        </>
       
     );
 };

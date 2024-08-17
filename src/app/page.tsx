@@ -7,9 +7,8 @@ import Rightbar from "@/components/home/Rightbar";
 import VideoGallery from "@/components/home/VideoGallery";
 import Header from "@/components/shared/Header";
 import Menubar from "@/components/shared/Menubar";
-import TittleCard from "@/components/ui/TittleCard";
 
-import Image from "next/image";
+
 
 
 export default function Home() {
@@ -29,8 +28,10 @@ export default function Home() {
       <HelpLineNumber/>
    </div>
 <Rightbar/>
-   </section>
 
+    
+   </section>
+ 
     </main>
   );
 }
