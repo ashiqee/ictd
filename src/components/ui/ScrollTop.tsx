@@ -8,7 +8,7 @@ const ScrollTop = () => {
               
               <ScrollToTop
       smooth
-    //   style={{ backgroundColor: 'red', borderRadius: '50%' }}
+    
     className=' text-green-800 text-2xl text-center  bg-red-800'
       component={
         <svg

@@ -36,7 +36,7 @@ const Topbar = () => {
           </div>
 
           <section>
-            <div className='flex gap-2  mt-2 md:mt-0 '>
+            <div className='flex gap-2 justify-between md:justify-start mt-2 md:mt-0 '>
              <Search/>
 
              <button className=' text-left font-kalpurush flex items-center gap-2 font-semibold w-20  text-white' onClick={handleChange} ><GlobalOutlined/>{language}</button>

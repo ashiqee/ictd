@@ -44,7 +44,7 @@ const Footer = () => {
         <div className='text-center font-kalpurush'>
             <small>২০২৪ &copy; তথ্য ও যোগাযোগ প্রযুক্তি অধিদপ্তর</small>
         </div>
-        <ScrollTop/>
+        {/* <ScrollTop/> */}
       </div>
        
     );

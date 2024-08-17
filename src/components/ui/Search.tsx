@@ -1,7 +1,7 @@
 const Search = () => {
     return (
       <>
-        <div className="hidden md:flex items-center justify-center">
+        <div className="flex items-center justify-center">
           <>
             <div className="flex h-6">
               <div className="flex w-7 items-center justify-center rounded-tl-md rounded-bl-md border-r border-gray-200 bg-white text-black">
