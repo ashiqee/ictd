@@ -4,7 +4,7 @@ import NoticeBoard from '../home/NoticeBoard';
 
 const Header = () => {
     return (
-        <div className='md:my-8 md:min-h-96 container lg:flex gap-8 justify-between  mx-auto'>
+        <div className='md:mt-8  md:min-h-96 container lg:flex gap-8 justify-between  mx-auto'>
             <div className=' w-full  shadow-lg  p-2 rounded-md   bg-cover bg-center object-center ' 
              style={{backgroundImage: "url(https://i.postimg.cc/bvsPTXQ8/ict-dept.png)",
           }}>
@@ -12,8 +12,8 @@ const Header = () => {
 
           <div className='flex md:px-10   container py-14 lg:py-0 mx-auto font-kalpurush gap-2 md:gap-4'>
           <Image
-          className="w-28 object-cover h-fit"
-             src="https://i.postimg.cc/XJyNdBbW/logo.png"
+          className="w-28 object-cover bg-white/80 rounded-full h-fit"
+             src="/images/bdMinLogo.webp"
              width={200}
              height={200}
              alt='bd-gov' />

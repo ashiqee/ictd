@@ -140,7 +140,7 @@ const Rightbar = () => {
          <TittleCard title={"ডিজিটাল বাংলাদেশ এর এগিয়ে যাওয়ার ১২ বছর"}/>
 
   <div>
-  <iframe className='w-full rounded-b-md' src="https://www.youtube.com/embed/0x5mf8BUJZY?si=fM5xCr4QkirnOygz" title="YouTube video player" ></iframe>
+  <iframe className='w-full mt-2 rounded-b-md' src="https://www.youtube.com/embed/0x5mf8BUJZY?si=fM5xCr4QkirnOygz" title="YouTube video player" ></iframe>
   </div>
                 
          </div>
@@ -152,7 +152,7 @@ const Rightbar = () => {
          <TittleCard title={"আইসিটি সম্পর্কে ভিডিও"}/>
 
   <div>
-  <iframe className='w-full rounded-b-md' src="https://www.youtube.com/embed/fXuQNttSyJ4?si=0EXGy3Pk2JzYq4hE" title="YouTube video player" ></iframe>
+  <iframe className='w-full mt-2 rounded-b-md' src="https://www.youtube.com/embed/fXuQNttSyJ4?si=0EXGy3Pk2JzYq4hE" title="YouTube video player" ></iframe>
   </div>
                 
          </div>
@@ -244,10 +244,10 @@ const Rightbar = () => {
          </section>
 
 {/* Dengu website */}
-<section  className='space-y-0 w-full '>
+<section  className='space-y-2 w-full '>
     <TittleCard title='ডেঙ্গু প্রতিরোধে করণীয়'/>
     <Image
-    className='w-full rounded-md hover:shadow-lg'
+    className='w-full  rounded-md hover:shadow-lg'
     src={"/images/dengu.jpg"}
     alt='#'
     width={200}

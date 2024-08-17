@@ -19,7 +19,13 @@ const Search = () => {
                 placeholder=""
                 id=""
               />
-              <button className="bg-red-600/90  px-1.5 rounded-tr-md rounded-br-md text-white  hover:bg-green transition-colors  border-none font-semibold">
+              <button className="border-none hover:bg-gradient-to-l
+        hover:from-red-500 
+        hover:via-red-800 
+        hover:to-red-900 
+        hover:bg-red-900/85
+        bg-gradient-to-l
+         from-green-700 via-green-800 to-green-900 bg-green-900/85 px-2  rounded-tr-md rounded-br-md text-white   transition-colors  font-semibold">
                 Search
               </button>
             </div>

@@ -1,7 +1,8 @@
 'use client'
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure} from "@nextui-org/react";
+import ModalVideo from './ModalVideo';
 
 interface VideoCardProps {
     title: string;
@@ -18,13 +19,22 @@ const VideoCard: React.FC<VideoCardProps> = ({
     description,
     onClick
 }) => {
-    const {isOpen, onOpen, onOpenChange} = useDisclosure();
+  const [isPopupOpen,setPopupOpen]= useState(false);
+ 
+    const [selectedVideo,setSelectedVideo]= useState('');
 
+  const openPopup = (videoUrl:string)=>{
+    setSelectedVideo(videoUrl);
+    setPopupOpen(true);
+}
 
+    const closePopup= ()=>{
+      setPopupOpen(false)
+  }
 
     return (
     <>
-        <div onClick={onOpen}
+        <div onClick={()=>openPopup(videoUrl)}
             className="border rounded-lg hover:text-green-700 overflow-hidden cursor-pointer transition-shadow duration-300 ease-in-out hover:shadow-lg"
             
         >
@@ -42,26 +52,9 @@ const VideoCard: React.FC<VideoCardProps> = ({
                 {description && <p className="text-sm text-gray-600">{description}</p>}
             </div>
         </div>
-        <Modal isOpen={isOpen} onOpenChange={onOpenChange} >
-        <ModalContent className="w-[800px]" >
-          {(onClose) => (
-            <>
-              {/* <ModalHeader className="flex flex-col gap-1">Video Title</ModalHeader> */}
-              <ModalBody >
-              <iframe className="w-full h-72" src="https://www.youtube.com/embed/GT9ShGE_qjg?si=RFbgKAx7yHWftptV" title="YouTube video player"></iframe>
-              </ModalBody>
-              <ModalFooter>
-                {/* <Button color="danger" variant="light" onPress={onClose}>
-                  Close
-                </Button> */}
-                {/* <Button color="primary" onPress={onClose}>
-                  Action
-                </Button> */}
-              </ModalFooter>
-            </>
-          )}
-        </ModalContent>
-      </Modal>
+ 
+<ModalVideo src={videoUrl}  isOpen={isPopupOpen} onClose={closePopup}/>
+      
     </>
     );
 };
